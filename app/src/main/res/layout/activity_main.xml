@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/colorPrimary"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.a6winwan.myapplication.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to  Chat world"
+            android:id="@+id/tvHello"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:textSize="30dp"
+            android:textColor="#F4A460"
+            android:bottomRightRadius="20dp" android:bottomLeftRadius="7dp"
+            android:topLeftRadius="7dp" android:topRightRadius="7dp"
+
+            />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="EMAIL"
+            android:id="@+id/etEmail"
+            android:background="#ffffff"
+
+            tools:paddingLeft="10dp"
+            android:layout_below="@+id/tvHello"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="Password"
+            android:id="@+id/etPassword"
+            android:background="#ffffff"
+            android:inputType="textPassword"
+            tools:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/etEmail"
+            android:layout_alignStart="@+id/etEmail" />
+        <Button
+            android:text="REGISTER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRegister"
+            android:textAlignment="center"
+            android:layout_below="@id/etPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+
+            />
+        <Button
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogin"
+            android:textAlignment="center"
+            android:layout_below="@id/btnRegister"
+            android:layout_centerHorizontal="true"
+
+
+            />
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancel"
+            android:textAlignment="center"
+            android:layout_below="@id/btnLogin"
+            android:layout_centerHorizontal="true"
+                        />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/pbLogin"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

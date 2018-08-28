@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true"
+    tools:context="com.example.a6winwan.myapplication.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USER PROFILE"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:id="@+id/tvTitle"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/ivUser"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="20dp"
+        android:background="#abaaaa"/>
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:id="@+id/pbLogin"
+        android:visibility="gone"
+    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogout"
+        android:text="LOGOUT"
+        android:layout_marginBottom="58dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="#000000"
+        android:background="#ffd000"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
